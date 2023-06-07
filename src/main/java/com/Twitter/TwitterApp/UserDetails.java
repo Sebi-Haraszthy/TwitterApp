@@ -42,4 +42,9 @@ public class UserDetails {
     public void setNumber(int number) {
         this.number = number;
     }
+
+    @Override
+    public String toString() {
+        return "UserDetails: " + "id = " + id + "; street = " + street + "; number = " + number + ".";
+    }
 }

@@ -46,4 +46,9 @@ public class User {
     public void setTweetList(List<Tweet> tweetList) {
         this.tweetList = tweetList;
     }
+
+    @Override
+    public String toString() {
+        return "User: " + "id = " + id + "; name = " + name + ".";
+    }
 }

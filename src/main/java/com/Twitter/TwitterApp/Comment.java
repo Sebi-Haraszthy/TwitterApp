@@ -39,4 +39,9 @@ public class Comment {
     public void setTweet(Tweet tweet) {
         this.tweet = tweet;
     }
+
+    @Override
+    public String toString() {
+        return "Comment: " + "id = " + id + "; text = " + text + "; tweet = " + tweet + ".";
+    }
 }

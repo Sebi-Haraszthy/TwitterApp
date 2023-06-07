@@ -3,6 +3,7 @@ package com.Twitter.TwitterApp;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Entity
@@ -56,5 +57,10 @@ public class Tweet {
 
     public void setCommentList(List<Comment> commentList) {
         this.commentList = commentList;
+    }
+
+    @Override
+    public String toString() {
+        return "Tweet: " + "id = " + id + "; user = " + user + "; text = " + text + ".";
     }
 }
